@@ -188,7 +188,7 @@ class AstrologicalSubject:
             self.nation = "GB"
             logging.warning("No nation specified, using GB as default")
 
-        if (not self.online) and (not lng or not lat or not tz_str):
+        if (not self.online) and (not lng or not lat or not (tz_str or utc_datetime)):
             raise KerykeionException(
                 "You need to set the coordinates and timezone if you want to use the offline mode!"
             )
