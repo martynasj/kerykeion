@@ -37,6 +37,9 @@ classifiers = [
     "Typing :: Typed",
 ]
 
+[tool.poetry.package]
+include = ["kerykeion/sweph/*"]
+
 # To include Kerykeion itself
 packages = [{ include = "kerykeion" }]
 
